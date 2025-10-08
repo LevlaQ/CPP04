@@ -6,11 +6,11 @@
 #    By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/06 15:10:49 by gyildiz           #+#    #+#              #
-#    Updated: 2025/10/06 15:13:01 by gyildiz          ###   ########.fr        #
+#    Updated: 2025/10/08 14:42:10 by gyildiz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = main.cpp
+SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS = $(SRCS:.cpp=.o)
 EXE_NAME = animals
 CXX = c++

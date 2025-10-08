@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 20:00:32 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 13:15:30 by gyildiz          ###   ########.fr       */
+/*   Updated: 2025/10/08 15:54:26 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 Animal::Animal()
 {
+	std::cout << "Animal: Default constructor called" << std::endl;
 	this->type = "Animal";
 }
 
 Animal::Animal(const Animal& copy)
 {
+	std::cout << "Animal: Copy constructor called" << std::endl;
 	*this = copy;
 }
 Animal &Animal::operator=(const Animal& assign)
@@ -30,6 +32,7 @@ Animal &Animal::operator=(const Animal& assign)
 
 Animal::~Animal()
 {
+	std::cout << "Animal: Destructor called" << std::endl;
 }
 
 const std::string &Animal::getType(void) const
