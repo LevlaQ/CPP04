@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:25:02 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 14:30:50 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/12 17:14:33 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class WrongCat: public WrongAnimal
 		WrongCat(const WrongCat& copy);
 		WrongCat &operator=(const WrongCat& assign);
 		
-		~WrongCat();
+		virtual ~WrongCat();
 
 		const std::string	&getType(void) const;
 		

@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 20:43:56 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 13:57:42 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/12 17:10:59 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,11 @@ class Cat: public Animal
 		Cat(const Cat& copy);
 		Cat &operator=(const Cat& assign);
 		
-		~Cat();
+		virtual ~Cat();
 
-		const std::string	&getType(void) const;
+		virtual const std::string	&getType(void) const;
 		
-		void	makeSound() const;
-	private:
-		std::string type;
+		virtual void	makeSound() const;
 };
 
 #endif

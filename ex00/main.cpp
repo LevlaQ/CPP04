@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:11:36 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 16:17:55 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/12 15:45:24 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,18 @@ int	main()
 	const WrongCat* wrongCat = new WrongCat();
 	
 
-	std::cout << meta->getType() << " " << std::endl;
+	std::cout << meta->getType() << std::endl;
 	meta->makeSound();
-	std::cout << j->getType() << " " << std::endl;
+	std::cout << j->getType() << std::endl;
 	j->makeSound();
-	std::cout << i->getType() << " " << std::endl;
+	std::cout << i->getType() << std::endl;
 	i->makeSound();
 
-	std::cout << wranimal->getType() << " " << std::endl;
+	std::cout << wranimal->getType() << std::endl;
 	wranimal->makeSound();
-	std::cout << cat->getType() << " " << std::endl;
+	std::cout << cat->getType() << std::endl;
 	cat->makeSound();
-	std::cout << wrongCat->getType() << " " << std::endl;
+	std::cout << wrongCat->getType() << std::endl;
 	wrongCat->makeSound();
 
 	delete meta;
