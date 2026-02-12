@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 13:59:25 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 14:03:41 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/12 17:10:55 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,11 @@ class Dog: public Animal
 		Dog(const Dog& copy);
 		Dog &operator=(const Dog& assign);
 		
-		~Dog();
+		virtual ~Dog();
 
-		const std::string	&getType(void) const;
+		virtual const std::string	&getType(void) const;
 		
-		void	makeSound() const;
-	private:
-		std::string type;
+		virtual void	makeSound() const;
 };
 
 #endif
