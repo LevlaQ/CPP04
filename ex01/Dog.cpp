@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:05:46 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 15:58:27 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/13 14:54:13 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,14 @@ const	std::string	&Dog::getType(void) const
 void	Dog::makeSound() const
 {
 	std::cout << "SOUND: BAAAAAAARK BARK BARK" << std::endl;
+}
+
+const std::string	&Dog::getIdea(int const index) const
+{
+	return (this->brain->getIdea(index));
+}
+
+void	Dog::setIdea(const std::string& idea, int const index)
+{
+		this->brain->setIdea(idea, index);
 }

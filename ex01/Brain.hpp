@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 13:59:25 by gyildiz           #+#    #+#             */
-/*   Updated: 2026/02/13 14:55:39 by gyildiz          ###   ########.fr       */
+/*   Created: 2026/02/12 17:35:45 by gyildiz           #+#    #+#             */
+/*   Updated: 2026/02/13 14:02:39 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
-# include "Animal.hpp"
-# include "Brain.hpp"
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
+# include <iostream>
+# include <string>
 
-class Dog: public Animal
+class Brain
 {
 	public:
-		Dog();
-		Dog(const Dog& copy);
-		Dog &operator=(const Dog& assign);
-		
-		virtual ~Dog();
 
-		virtual const std::string	&getType(void) const;
-		const std::string	&getIdea(int index) const;
+		Brain(const Brain& copy);
+		Brain &operator=(const Brain& assign);
+		const std::string	&getIdea(int const index) const;
 		void	setIdea(const std::string& idea, int const index);
-		
-		virtual void	makeSound() const;
+
+		Brain();
+		~Brain();
+	
 	private:
-		Brain	*brain;
+		std::string ideas[100];
 };
 
 #endif

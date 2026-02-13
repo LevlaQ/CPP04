@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 13:18:32 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 15:57:34 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/13 14:41:57 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,14 @@ const	std::string	&Cat::getType(void) const
 void	Cat::makeSound() const
 {
 	std::cout << "SOUND: MEEEOOOOOOOOOOOW" << std::endl;
+}
+
+const std::string	&Cat::getIdea(int const index) const
+{
+	return (this->brain->getIdea(index));
+}
+
+void	Cat::setIdea(const std::string& idea, int const index)
+{
+		this->brain->setIdea(idea, index);
 }
