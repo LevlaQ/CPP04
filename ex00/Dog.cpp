@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:05:46 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 15:58:27 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/14 15:36:11 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Dog::Dog()
 	this->type = "Dog";
 }
 
-Dog::Dog(const Dog& copy)
+Dog::Dog(const Dog& copy) : Animal(copy)
 {
 	std::cout << "Dog: Copy constructor called" << std::endl;
 	*this = copy;
