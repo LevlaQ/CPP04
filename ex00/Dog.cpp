@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:05:46 by gyildiz           #+#    #+#             */
-/*   Updated: 2026/02/14 15:36:11 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/14 18:27:26 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ Dog::Dog(const Dog& copy) : Animal(copy)
 Dog &Dog::operator=(const Dog& assign)
 {
 	if(this != &assign)
+	{
+		Animal::operator=(assign);
 		this->type = assign.type;
+	}
 	return (*this);
 }
 

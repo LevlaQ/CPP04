@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 13:18:32 by gyildiz           #+#    #+#             */
-/*   Updated: 2026/02/14 15:35:14 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/14 18:27:51 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ Cat::Cat(const Cat& copy) : Animal(copy)
 Cat &Cat::operator=(const Cat& assign)
 {
 	if(this != &assign)
+	{
+		Animal::operator=(assign);
 		this->type = assign.type;
+	}
 	return (*this);
 }
 
