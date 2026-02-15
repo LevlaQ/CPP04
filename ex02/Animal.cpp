@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 20:00:32 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/10/08 15:54:26 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/15 17:59:40 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,4 @@ Animal::~Animal()
 const std::string &Animal::getType(void) const
 {
 	return (this->type);
-}
-
-void Animal::makeSound() const
-{
-	std::cout << "SOUND: Indistinguishable human noises" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:11:26 by gyildiz           #+#    #+#             */
-/*   Updated: 2026/02/15 15:07:03 by gyildiz          ###   ########.fr       */
+/*   Updated: 2026/02/15 17:31:46 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,14 @@
 
 int	main(void)
 {
-	Animal* meta = new Animal();
 	Animal* j= new Dog;
 	Animal* i= new Cat;
 
-	std::cout << meta->getType() << std::endl;
-	meta->makeSound();
 	std::cout << j->getType() << std::endl;
 	j->makeSound();
 	std::cout << i->getType() << std::endl;
 	i->makeSound();
 
-	delete meta;
 	delete j;
 	delete i;
 
